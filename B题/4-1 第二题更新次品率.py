@@ -7,7 +7,7 @@ from matplotlib import rcParams
 rcParams['font.sans-serif'] = ['SimHei']
 rcParams['axes.unicode_minus'] = False
 
-def bayesian_update(k, n, alpha_prior=1, beta_prior=1):
+def bayesian_update(k, n, alpha_prior=0.9, beta_prior=0.1):
     alpha_post = alpha_prior + k
     beta_post = beta_prior + (n - k)
     return alpha_post, beta_post
