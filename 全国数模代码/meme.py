@@ -1,6 +1,4 @@
 import random
-
-
 # def rng(posibility):
 #     if random.random() < posibility:
 #         return 1
